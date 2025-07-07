@@ -1,46 +1,60 @@
 .header {
-  background-color: #283593;
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+  background: linear-gradient(90deg, #ff4500, #ff8c00, #ffd700);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .form {
   display: flex;
+  justify-content: center;
   align-items: center;
-}
-
-.inputWrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.searchButton {
-  position: absolute;
-  left: 10px;
-  background: none;
-  border: none;
-  font-size: 18px;
-  color: gray;
-  cursor: pointer;
-  padding: 0;
+  gap: 10px;
 }
 
 .input {
-  width: 350px;
-  padding: 10px 10px 10px 35px; /* Зміщуємо текст правіше, щоб не заходив на лупу */
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  width: 300px;
+  padding: 10px 15px;
   font-size: 16px;
+  border: 2px solid transparent;
+  border-radius: 25px;
   outline: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .input:focus {
-  border-color: #1976d2;
+  border-color: #ff4500;
+  box-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
+}
+
+.button {
+  background: linear-gradient(90deg, #ff4500, #ff8c00, #ffd700);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out, transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #ffd700, #ff8c00, #ff4500);
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+}
+
+.button:focus {
+  outline: none;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 69, 0, 0.5);
+}
+
+.button:active {
+  transform: scale(0.95);
 }
