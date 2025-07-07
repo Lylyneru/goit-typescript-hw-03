@@ -1,0 +1,27 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Щоб модальне вікно було поверх усього */
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90vw; /* Щоб не займало весь екран */
+  max-height: 90vh;
+}
+
+.modalImg {
+  max-width: 90vw; /* Максимальна ширина 90% екрану */
+  max-height: 90vh; /* Максимальна висота 90% екрану */
+  object-fit: contain; /* Щоб картинка не обрізалася */
+  border-radius: 10px; /* Округлення кутів */
+}

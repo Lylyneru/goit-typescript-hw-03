@@ -1,0 +1,46 @@
+.header {
+  background-color: #283593;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.searchButton {
+  position: absolute;
+  left: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: gray;
+  cursor: pointer;
+  padding: 0;
+}
+
+.input {
+  width: 350px;
+  padding: 10px 10px 10px 35px; /* Зміщуємо текст правіше, щоб не заходив на лупу */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #1976d2;
+}

@@ -1,0 +1,11 @@
+.gallery {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 250px; /* Фіксована висота */
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto; /* Центруємо галерею */
+}
